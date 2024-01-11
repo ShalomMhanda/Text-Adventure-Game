@@ -1,6 +1,6 @@
 # Text-Adventure-Game
 
-REFLECTION
+## REFLECTION
 Our group started off by mapping out what the game would look like to a player. After having decided on what we wanted it to look like we went on to outline our goals for the game. Our main goal for this game was to educate people about the continent of Africa.
 Our next step was to then make all the backend decisions. We decided on the class structure and the data structure we needed for each element of our game. After having made the front-end and backend decisions we split up and allowed each group member to work on a certain room of the game. We then came back together to make the game work together and make sure all the rooms were working well together.
 
@@ -13,7 +13,7 @@ We wish we could have additional rooms in the house. With more rooms, we could h
 Some hints would have been to start early, even if you're not sure what exactly to do, you will figure it out as you go. Work on what you can first and then expand the game as you go on. Another hint would be to keep track of every decision as you go on because we ran into a lot of issues when we could have an error but were unsure why we had made some decisions before.
 
 
-DESIGN JUSTIFICATION
+## DESIGN JUSTIFICATION
 In our witch's room we decided to use a 2D array because this made accessing riddles and hints very easy and we could connect each riddle to its hints. We could have used 3 linked lists for this. Each linked list has the riddle as the first node and hints as to the following nodes. This turned out to be quite expensive and complicated because we would have to have a method to go through each linked list recursively and be able to strategically recursively call the next linked list when the riddle was answered correctly. This also seems quite expensive because we did not need the capabilities of a linked list to insert and remove easily.
 
 We decided to use a graph to connect all the rooms and hallway because this allowed so many connections to be made between all our places in the house. We could have used a tree but this would not have given us the flexibility to go back and forth between the rooms that we wanted.
